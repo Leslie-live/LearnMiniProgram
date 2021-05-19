@@ -1,6 +1,38 @@
 {
   "pages": [
     "page/home/home",
-    "page/about/about"
+    "page/about/about",
+    "page/profile/profile"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ff5777",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "小程序",
+    "backgroundColor": "#fff000",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "ff5777",
+    "list": [
+      {
+      "pagePath": "page/home/home",
+      "text": "首页",
+      "iconPath": "assets/tabbar/home_unse.png",
+      "selectedIconPath": "assets/tabbar/home_sele.png"
+    },
+    {
+      "pagePath": "page/about/about",
+      "text": "选车",
+      "iconPath": "assets/tabbar/car_unse.png",
+      "selectedIconPath": "assets/tabbar/car_sele.png"
+    },
+    {
+      "pagePath": "page/profile/profile",
+      "text": "我的",
+      "iconPath": "assets/tabbar/me_unse.png",
+      "selectedIconPath": "assets/tabbar/me_selse.png"
+    }
   ]
+  }
 }
