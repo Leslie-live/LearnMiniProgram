@@ -1,3 +1,4 @@
 <!--page/home/home.wxml-->
 <text class='title'>hello world</text>
-<button size="mini">按钮</button>
+<button size="mini" bindtap="handleBtnClick">按钮</button>
+<view>{{message}}</view>
