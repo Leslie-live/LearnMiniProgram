@@ -1,0 +1,13 @@
+<!--page/view/view.wxml-->
+<view class="box">哈哈哈哈</view>
+<view>呵呵呵呵</view>
+
+<!-- hover-class 当用户按下组件时候显示的样式   number 类型 最好 {{number}}-->
+<view class="box1" hover-class="hover-view" hover-stay-time="0">box1</view>
+
+<!-- hover-class 当用户按下组件时候显示的样式   number 类型 最好 {{number}}-->
+<view class="box2" hover-class="hover2-view">
+  <view class="box1" hover-class="hover-view" hover-stay-time="0" hover-stop-propagation>
+    box1
+  </view>
+</view>

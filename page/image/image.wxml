@@ -1,0 +1,30 @@
+<!--page/image/image.wxml-->
+
+<!-- image 使用
+1:image组件可以写成单标签，也可以修改成双标签
+2:image组件默认有自己的大小  320 * 240
+3：image组件是一个行内块级元素
+-->
+<!-- src :本地路径（相对路径，绝对路径）/远程地址 -->
+<image src="../../assets/icon-40@3x.png"/>
+<image src="/assets/icon-40@3x.png"/>
+<image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2F1812.img.pp.sohu.com.cn%2Fimages%2Fblog%2F2009%2F11%2F18%2F18%2F8%2F125b6560a6ag214.jpg&refer=http%3A%2F%2F1812.img.pp.sohu.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1624087698&t=8d5c478328ff8009e728ba91ae5bab12"/>
+
+<!-- 补充：显示相册图片 -->
+<button bindtap="handleChoosePic">选中图片</button>
+<image src="{{imagePath}}"/>
+
+<!-- bindload 监听图片加载完成 
+lazy-load 图片懒加载
+-->
+<view>---------------------------------</view>
+<image wx:for="{{1}}"
+       src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2F1812.img.pp.sohu.com.cn%2Fimages%2Fblog%2F2009%2F11%2F18%2F18%2F8%2F125b6560a6ag214.jpg&refer=http%3A%2F%2F1812.img.pp.sohu.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1624087698&t=8d5c478328ff8009e728ba91ae5bab12" 
+bindload='zyhandImageLoad'
+lazy-load/>
+
+<!-- 4：show-menu-by-longpress 长按图片识别小程序 -->
+<image show-menu-by-longpress
+       mode="widthFix"
+      src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2F1812.img.pp.sohu.com.cn%2Fimages%2Fblog%2F2009%2F11%2F18%2F18%2F8%2F125b6560a6ag214.jpg&refer=http%3A%2F%2F1812.img.pp.sohu.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1624087698&t=8d5c478328ff8009e728ba91ae5bab12"
+/>

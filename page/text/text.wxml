@@ -1,0 +1,20 @@
+<!--page/text/text.wxml-->
+<!--page/test/test.wxml-->
+<text>Hello world \n</text>
+<text>你好小程序\n</text>
+
+<!-- 2: -->
+<!-- 默认text中的文本是不能被选中的 -->
+<text selectable="{{true}}">Hello coderWhy \n</text>
+<text selectable>Hello coderWhy \n</text>
+
+<!-- space 决定文空格大小 -->
+<!-- ensp:半个中文字符大小 -->
+<!-- emsp：一个中文字符大小 -->
+<text>Hello world \n</text>
+<text space="nbsp">Hello world\n</text>
+<text space="emsp">Hello world\n</text>
+<text space="ensp">Hello world\n</text>
+
+<!-- 4：decode属性：是否解码文本 -->
+<text decode>5 &gt; 3</text>

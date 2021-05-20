@@ -1,0 +1,21 @@
+<!--page/scroll-view/scroll-view.wxml-->
+<!-- 水平滚动 scroll-x-->
+<scroll-view class="container1" scroll-x>
+  <!-- view 是块级标签 -->
+   <view wx:for="{{10}}" class="item1">{{item}}</view>
+</scroll-view>
+<!-- 垂直滚动 scroll-y-->
+<scroll-view class="container2" scroll-y>
+  <!-- view 是块级标签 -->
+   <view wx:for="{{10}}" class="item2">{{item}}</view>
+</scroll-view>
+
+<!-- 其他补充-->
+<scroll-view class="container2" scroll-y
+             bindscroll="handleScroll"
+>
+  <!-- view 是块级标签 -->
+   <view wx:for="{{10}}" class="item2">{{item}}</view>
+</scroll-view>
+
+
